@@ -16,8 +16,6 @@ fi
 # Prompt user to enter Discord webhook URL and store it in a file
 read -p "Enter Discord webhook URL: " webhook_url
 echo "$webhook_url" > /root/.discord_webhook
-
-# Set permissions for the file
 chmod 600 /root/.discord_webhook
 dumpdir=/tmp/
 
