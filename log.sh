@@ -38,8 +38,7 @@ while true; do
     msg_content="Dumping $pkt packets/s"
     curl -H "Content-Type: application/json" -X POST -d "{\"content\": \"$msg_content\"}" "$(cat /root/.discord_webhook)"
     
-    # Wait for 5 minutes before checking packets again
-    echo "$(date) Just got hit. Sleeping for 5 minutes."
+    echo "The attack occurred at the time $(date). Sleeping for 5 minutes."
     sleep 300
   fi
 done
